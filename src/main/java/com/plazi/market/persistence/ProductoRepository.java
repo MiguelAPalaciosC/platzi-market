@@ -13,6 +13,6 @@ public class ProductoRepository {
     }
 
     public List<Producto> getByCategoria(int idCategoria) {
-        return productoCrudRepository.findByIdCategoria(idCategoria);
+        return productoCrudRepository.findByIdCategoriaOrderByNombreAsc(idCategoria);
     }
 }

@@ -8,5 +8,5 @@ import java.util.List;
 public interface ProductoCrudRepository extends CrudRepository<Producto, Integer> {
 
 
-    List<Producto> findByIdCategoria(int idCategoria);
+    List<Producto> findByIdCategoriaOrderByNombreAsc(int idCategoria);
 }
